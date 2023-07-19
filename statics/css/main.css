@@ -59,5 +59,15 @@ ul {
     background-color: rgb(242, 247, 237);
 }
 
+ul li{
+    cursor: pointer;
+    
+}
+
+ul li:target {
+
+    text-decoration: line-through;
+}
+
 
 
