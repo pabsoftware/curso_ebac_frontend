@@ -17,7 +17,14 @@ $(document).ready(function(){
         for (var i = 0; i < descendentes.length; i++) {
             descendentes[i].addEventListener("click", function (e) {
             
-            e.target.style.textDecoration = "line-through"
+            //Adicionei a opção de marcar ou desmarcar tarefa concluida para o caso de click acidental ter como reverter
+            if (e.target.style.textDecoration == "line-through"){
+                e.target.style.cssText = "null"
+            }else {
+                e.target.style.textDecoration = "line-through"
+            }
+
+            
             
         })
         }
