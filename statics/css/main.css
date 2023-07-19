@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: rgb(54, 71, 59);
+    padding: 16px 0;
+    display: flex;
+    border-bottom: 8px solid rgb(153, 223, 184);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.container{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid silver;
+
+}
+
+form {
+    background-color: rgb(215, 209, 209);
+    padding: 24px 0;
+    text-align: center;
+    
+    
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(79, 93, 78);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+ul {
+    padding: 16px;
+    margin-left: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(242, 247, 237);
+}
+
+
+
