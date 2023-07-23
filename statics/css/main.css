@@ -6,10 +6,10 @@
 }
 
 header{
-    background-color: rgb(54, 71, 59);
+    background-color: rgb(29, 28, 40);
     padding: 16px 0;
     display: flex;
-    border-bottom: 8px solid rgb(153, 223, 184);
+    border-bottom: 8px solid rgb(120, 123, 121);
     justify-content: center;
     text-transform: uppercase;
     font-style: italic;
@@ -21,20 +21,28 @@ header{
     width: 640px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid silver;
+    
 
 }
 
 form {
+
     background-color: rgb(215, 209, 209);
-    padding: 24px 0;
-    text-align: center;
-    
-    
+    padding-bottom: 24px;
+    padding: 30px ;
+    border-radius: 10px;
+    border: 5px solid silver;
+ 
 }
 
 form h2{
+    
     margin-bottom: 16px;
+    background-color: wheat;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    
 }
 
 input, button {
@@ -50,24 +58,19 @@ button {
     color: white;
 }
 
-
-ul {
-    padding: 16px;
-    margin-left: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(242, 247, 237);
+.campo-form{
+    padding-bottom: 16px;
+}
+.campo-form label{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-ul li{
-    cursor: pointer;
+.campo-form input{
+    width: 100%;
+}
     
-}
-
-ul li:target {
-
-    text-decoration: line-through;
-}
 
 
 

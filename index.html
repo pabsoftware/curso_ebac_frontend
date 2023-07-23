@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio jquery</title>
+    <title>Exercicio plugin jquery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./statics/css/main.css">
+
 </head>
 <body>
     <header>
         
-        <h1>Exercicio jquery</h1> 
-        <hr>
+        <h1>Exercicio plugin jquery</h1> 
+        
     </header>
    
         
-       
-       <div class="container">
-            <form action="">
-                <h2>Lista de Tarefas</h2>
-                <input type="text" id="nova-tarefa" required placeholder="Nome da tarefa">
-                <button type="submit">Cadastrar + </button>
-                
-            </form>
-            <div class="lista-tarefa">
-            <ul class ="tarefas-list">
-               
-            </ul>
+      <section class="contato">
+        <div class="container">
+                <form action="">
+                    
+                    <h2>Uso de máscara com jquery mask</h2>
+                    
+                    <div class="campo-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone">
+                    </div>
+                   
+                    <div class="campo-form">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf">
+                    </div>
+                   
+                    <div class="campo-form">
+                        <label for="endereco">Endereço completo</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+                    
+                    <div class="campo-form">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep">
+                    </div>
+                   
+                    <button type="submit">Cadastrar + </button>
+                    
+                </form>
+              
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./statics/js/main.js"></script>
+</section> 
+    <!--Biblioteca de terceiro-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./statics/js/jquery.mask.min.js"></script>
+    <script src="./statics/js/jquery.validate.min.js"></script>
+    <script src="./statics/js/jquery.mask.min.js"></script>
+    <script src="./statics/js/messages_pt_BR.min.js"></script>
+    <!--Local-->
+<script src="./statics/js/main.js"></script>
 </body>
 </html>

@@ -1,27 +1,38 @@
 
 $(document).ready(function(){
-    
-  
 
+    $('#telefone').mask('(99) 00000-0000', {
+        placeholder: '(00) 00000-0000'
+    }) 
 
-    $('form').on('submit', function(e){
-        e.preventDefault();
+    $('#cpf').mask('000.000.000-00', {
+        placeholder: '000.000.000-00'
+    }) 
 
-        const tarefa = $('#nova-tarefa').val()
-        //Concatenei com o + pois a form ${terefa} não esta funcionando aqui pra mim
-        const novo_item_li = $('<li style="diplay:none;"> ' + tarefa + '</li> ');
-        $(novo_item_li).appendTo('ul');
-
-        const descendentes =$(".tarefas-list li");
-
-        for (var i = 0; i < descendentes.length; i++) {
-            descendentes[i].addEventListener("click", function (e) {
-            e.target.style.textDecoration = "line-through"
+    $('#cep').mask('00000-000', {
+        placeholder: '00000-000'
+    }) 
+     
+    $('form').validate({
+        rules: {
+            nome: {
+                required: true
+            },
+            email: {
+                required: true
+            }, 
+            telefone:{
+                required: true
+            }
             
-        })
+        },
+        messages:{
+            nome: 'Favor, escreva seu nome completo',
+            email: 'Favor, informe seu melhor email',
         }
-        
     })
+  
+   
 
 
 })
