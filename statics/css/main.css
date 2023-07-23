@@ -77,6 +77,17 @@ button {
 .campo-form input{
     width: 100%;
 }
+/*Muda a cor da mensagem de erro de todos*/
+.error {
+    color: rgb(28, 50, 126);
+    font-style: italic;
+    
+}
+
+/*Muda a cor da mensagem de erro apenas do input cpf*/
+#cpf-error {
+    color: red;
+}
     
 
 
