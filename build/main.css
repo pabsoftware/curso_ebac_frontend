@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 header {
   background-color: #182C61;
   position: sticky;
@@ -31,13 +35,41 @@ header .container .menu {
   display: flex;
 }
 header .container li {
-  list-style: none;
   font-weight: bold;
   margin-left: 24px;
 }
 header .container a {
   color: #fff;
   text-decoration: none;
+}
+
+section {
+  padding: 56px 0;
+}
+section .products {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+section img {
+  width: 100%;
+  border-radius: 16px;
+}
+section .product-button {
+  display: block;
+  background-color: #44bd32;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+section .product-button:hover {
+  background-color: #4cd137;
 }
 
 @media screen and (max-width: 767px) {
