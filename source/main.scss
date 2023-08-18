@@ -2,12 +2,6 @@
 @use 'config/variaveis';
 @use 'sass:math';
 
-@mixin elementoForm($margin: 16px){
-    padding: 8px;
-    display: block;
-    width: 100%;
-    margin-bottom: $margin;
-}
 
 @function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px){
     @return math.div($alvoEmPixel, $contextoEmPixel)+em;
@@ -27,7 +21,7 @@ li {
 }
 
 header {
-    background-color: #182C61;
+    background-color: variaveis.$corCabecalho;
     position: sticky;
     top: 0;
     left: 0;
@@ -38,57 +32,82 @@ header {
         padding: 16px 0;
         .menu{
             display: flex;
-        }
-            li{
-            
-            font-weight: bold;
-            margin-left: 24px;
 
-            }
+            li{
+                font-weight: bold;
+                margin-left: 24px;
                 a{
-                    color: #fff;
+                    color: variaveis.$corBranca;
                     text-decoration: none;
                 }
-       
+            }
+        }
+           
+
+
     }
 }
 
 section {
     padding: 56px 0;
-    .products {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 32.66%);
-        column-gap: 1%;
-        row-gap: 4%;
-        width: 100%;
-    }
 
-        img {
+}
+        .products {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 32.66%);
+            column-gap: 1%;
+            row-gap: 4%;
             width: 100%;
-            border-radius: 16px;
-        }
 
-        .product-button {
-            display: block;
-            background-color: variaveis.$corBoteos;
-            color: #fff;
-            text-align: center;
-            padding: 8px 0;
-            border-radius: 8px;
-            margin-top: 8px;
-            text-decoration: none;
-            &:hover {
-                background-color: #4cd137;
+            .product-item img {
+                width: 100%;
+                border-radius: 16px;
+            }
+    
+            .product-button {
+                display: block;
+                background-color: variaveis.$corBoteos;
+                color: variaveis.$corBranca;
+                text-align: center;
+                padding: 8px 0;
+                border-radius: 8px;
+                margin-top: 8px;
+                text-decoration: none;
+                &:hover {
+                    background-color: #4cd137;
+                }
             }
         }
+    
 
-}
+        
 
-@media screen and (max-width: variaveis.$mobile){
-    .container{
+        
+
+
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
         max-width: 80%;
-        font-size: 12px;
+    }
+
+    .products {
+        
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+       
+
+        
     }
 }
 
+@media screen and (max-width: variaveis.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
