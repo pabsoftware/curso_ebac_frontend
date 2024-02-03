@@ -1,79 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./build/styles/styles.css">
+    <title>Meu Github</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="branding">
-                <img src="https://via.placeholder.com/120x70" />
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="#">Início</a>
-                    </li>
-                    <li>
-                        <a href="#">Produtos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <h2>Produtos</h2>
-            <ul class="products">
-                <li class="product-item">
-                    <img src="https://via.placeholder.com/180x180" />
-                    <h4>Nome do produto</h4>
-                    <p>
-                        Descrição do produto, cor, tamanho, textura, etc.
-                    </p>
-                    <a href="#" class="product-button">
-                        Ver detalhes
-                    </a>
+            <img class="profile-avatar" src="https://via.placeholder.com/180x180" alt="." id="avatar">
+            <h1 class="profile-name" id="name"></h1>
+            <h2 class="profile-username" id="username">@ogiansouza</h2>
+            <ul class="numbers">
+                <li class="numbers-item" >
+                    <h4>Repositórios</h4>
+                    <span id="repos"></span>
                 </li>
-                <li class="product-item">
-                    <img src="https://via.placeholder.com/180x180" />
-                    <h4>Nome do produto</h4>
-                    <p>
-                        Descrição do produto, cor, tamanho, textura, etc.
-                    </p>
-                    <a href="#" class="product-button">
-                        Ver detalhes
-                    </a>
+                <li class="numbers-item" >
+                    <h4>Seguidores</h4>
+                    <span id="followers"></span>
                 </li>
-                <li class="product-item">
-                    <img src="https://via.placeholder.com/180x180" />
-                    <h4>Nome do produto</h4>
-                    <p>
-                        Descrição do produto, cor, tamanho, textura, etc.
-                    </p>
-                    <a href="#" class="product-button">
-                        Ver detalhes
-                    </a>
-                </li>
-                <li class="product-item">
-                    <img src="https://via.placeholder.com/180x180" />
-                    <h4>Nome do produto</h4>
-                    <p>
-                        Descrição do produto, cor, tamanho, textura, etc.
-                    </p>
-                    <a href="#" class="product-button">
-                        Ver detalhes
-                    </a>
+                <li class="numbers-item" >
+                    <h4>Seguindo</h4>
+                    <span id="follower"></span>
                 </li>
             </ul>
+            <a href="#" class="profile-link" id="link">Ver no Github</a>
         </div>
-    </section>
+        <div id="name"></div>
+    </header>
+
+    <script src="main.js"></script>
 </body>
 </html>
