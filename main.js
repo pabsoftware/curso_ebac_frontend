@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
         })
         .then(function(json){
-            console.log(json);
+            
             name.innerText          = json.name;
             username.innerText      = json.login;
             repositorios.innerText  = json.public_repos;
