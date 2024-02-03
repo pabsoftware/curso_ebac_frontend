@@ -70,3 +70,11 @@ header .container {
 .numbers-item h4 {
     font-size: .3em;
 }
+
+.error {
+    margin-top: 40px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(230, 131, 106);
+    display: none;
+}
