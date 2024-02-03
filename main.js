@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(function(json){
             console.log(json);
-            name.innerText = json.name;
-            username.innerText = json.login;
-            repositorios.innerText = json.public_repos;
-            followers.innerText = json.followers;
-            follower.innerText = json.following;
-            link.href = json.html_url;
-            avatar.src = json.avatar_url;
+            name.innerText          = json.name;
+            username.innerText      = json.login;
+            repositorios.innerText  = json.public_repos;
+            followers.innerText     = json.followers;
+            follower.innerText      = json.following;
+            link.href               = json.html_url;
+            avatar.src              = json.avatar_url;
             
         })
 })
