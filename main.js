@@ -28,3 +28,5 @@ const arrayAlunos = [
 
 ];
 
+
+const notasAprovativa = arrayAlunos => {return arrayAlunos.nota >= 6}
